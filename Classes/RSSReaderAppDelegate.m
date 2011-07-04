@@ -35,19 +35,20 @@
     NewsListViewController * newsController = nil;
     UINavigationController * newsNavigationController = nil;
     for (NSDictionary * folderDetails in subscriptionFolders) {
-        
-        newsController = [[NewsListViewController alloc] initWithNibName:@"NewsListViewController" bundle:nil];
-        newsNavigationController = [[UINavigationController alloc] initWithRootViewController:newsController];
-        
+
+        NSArray * newsItems = [folderDetails objectForKey:@"Items"];
         NSString * folderTitle = [folderDetails objectForKey:@"FolderName"];
         NSString * folderIcon = [folderDetails objectForKey:@"FolderIcon"];
         UIImage * folderIconImage = [UIImage imageNamed:folderIcon];
+
+        newsController = [[NewsListViewController alloc] initWithNewsSourceList:newsItems];
+        [newsController setTitle:folderTitle];
         
+        newsNavigationController = [[UINavigationController alloc] initWithRootViewController:newsController];
         [newsNavigationController setTitle:folderTitle];
         [newsNavigationController.tabBarItem setImage:folderIconImage];
         
         [viewControllers addObject:newsNavigationController];
-        
         [newsNavigationController release];
         [newsController release];
     }

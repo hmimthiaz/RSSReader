@@ -20,6 +20,7 @@
     self = [super initWithNibName:@"BrowserViewController" bundle:nil];
     if (self) {
         self.loadRequest = request;
+        self.hidesBottomBarWhenPushed = YES;
     }
     return self;
 }

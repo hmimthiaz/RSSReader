@@ -5,10 +5,10 @@
 	<key>Folders</key>
 	<array>
 		<dict>
-			<key>FolderName</key>
-			<string>Blogs</string>
 			<key>FolderIcon</key>
 			<string>glyphicons_024_parents.png</string>
+			<key>FolderName</key>
+			<string>Blogs</string>
 			<key>Items</key>
 			<array>
 				<dict>
@@ -21,13 +21,85 @@
 					<key>BlogTitle</key>
 					<string>Flip Media Blog</string>
 					<key>BlogURL</key>
-					<string>http://burner.imthi.com/imthi</string>
+					<string>http://www.flipcorp.com/en/section/read/blog/feed</string>
 				</dict>
 				<dict>
 					<key>BlogTitle</key>
-					<string>Imthiaz Blog</string>
+					<string>$this - Shuja Blog</string>
 					<key>BlogURL</key>
-					<string>http://www.flipcorp.com/en/section/read/blog/feed</string>
+					<string>http://dollarthis.com/feed</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Weblog of Ravoof</string>
+					<key>BlogURL</key>
+					<string>http://www.ravoof.com/feed</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>FolderIcon</key>
+			<string>glyphicons_252_twitter.png</string>
+			<key>FolderName</key>
+			<string>Twitter</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>BlogTitle</key>
+					<string>@hmimthiaz</string>
+					<key>BlogURL</key>
+					<string>http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=hmimthiaz</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>@flipmedia</string>
+					<key>BlogURL</key>
+					<string>http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=flipmedia</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>@smshuja</string>
+					<key>BlogURL</key>
+					<string>http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=smshuja</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>@ravoof</string>
+					<key>BlogURL</key>
+					<string>http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=ravoof</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>FolderIcon</key>
+			<string>glyphicons_149_folder_new.png</string>
+			<key>FolderName</key>
+			<string>News</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Gulf News</string>
+					<key>BlogURL</key>
+					<string>http://gulfnews.com/cmlink/1.446094</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Khaleej Times</string>
+					<key>BlogURL</key>
+					<string>http://www.khaleejtimes.com/services/rss/topstories/rss.xml</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Guardian</string>
+					<key>BlogURL</key>
+					<string>http://feeds.guardian.co.uk/theguardian/rss</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>BBC</string>
+					<key>BlogURL</key>
+					<string>http://feeds.bbci.co.uk/news/rss.xml</string>
 				</dict>
 			</array>
 		</dict>

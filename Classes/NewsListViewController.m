@@ -13,45 +13,18 @@
 
 @implementation NewsListViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+@synthesize newsSourceList = _newsSourceList;
+
+- (id)initWithNewsSourceList:(NSArray * )list {
+    self = [super initWithNibName:@"NewsListViewController" bundle:nil];
     if (self) {
-        
-        self.title = @"RSS Reader";
-        _newsSourceList = [[NSMutableArray alloc] init];
-        
-        NSDictionary * newsSourceItem;
-        newsSourceItem = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"BBC Top Stories",@"http://feeds.bbci.co.uk/news/rss.xml", nil]
-                                                     forKeys:[NSArray arrayWithObjects:@"title",@"url",nil]];
-        [_newsSourceList addObject:newsSourceItem];
-
-        newsSourceItem = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"UAE News",@"http://gulfnews.com/cmlink/1.446094", nil]
-                                                     forKeys:[NSArray arrayWithObjects:@"title",@"url",nil]];
-        [_newsSourceList addObject:newsSourceItem];
-        
-        newsSourceItem = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"The Unofficial Apple Weblog",@"http://www.tuaw.com/rss.xml", nil]
-                                                     forKeys:[NSArray arrayWithObjects:@"title",@"url",nil]];
-        [_newsSourceList addObject:newsSourceItem];
-
-        newsSourceItem = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"Engadget",@"http://www.engadget.com/rss.xml", nil]
-                                                     forKeys:[NSArray arrayWithObjects:@"title",@"url",nil]];
-        [_newsSourceList addObject:newsSourceItem];
-
-        newsSourceItem = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"Flip Media Blog",@"http://www.flipcorp.com/en/section/read/blog/feed", nil]
-                                                     forKeys:[NSArray arrayWithObjects:@"title",@"url",nil]];
-        [_newsSourceList addObject:newsSourceItem];
-        
-        newsSourceItem = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"imthi.com",@"http://feeds.feedburner.com/hmimthiaz", nil]
-                                                     forKeys:[NSArray arrayWithObjects:@"title",@"url",nil]];
-        [_newsSourceList addObject:newsSourceItem];
- 
+        self.newsSourceList = list;
     }
     return self;
 }
 
 - (void)dealloc{
-    [_newsSourceList release];
-    _newsSourceList = nil;
+    self.newsSourceList = nil;
     
     [super dealloc];
 }
@@ -84,7 +57,7 @@
     }
     
     NSDictionary * newsSourceItem = (NSDictionary *)[_newsSourceList objectAtIndex:indexPath.row];
-    [cell.textLabel setText:[newsSourceItem objectForKey:@"title"]];
+    [cell.textLabel setText:[newsSourceItem objectForKey:@"BlogTitle"]];
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     
     return cell;
@@ -97,8 +70,8 @@
     NSDictionary * newsSourceItem = (NSDictionary *)[_newsSourceList objectAtIndex:indexPath.row];
     
     
-    RSSListViewController * rssListViewController = [[RSSListViewController alloc] initWithRSSURL:[newsSourceItem objectForKey:@"url"]];
-    [rssListViewController setTitle:[newsSourceItem objectForKey:@"title"]];
+    RSSListViewController * rssListViewController = [[RSSListViewController alloc] initWithRSSURL:[newsSourceItem objectForKey:@"BlogURL"]];
+    [rssListViewController setTitle:[newsSourceItem objectForKey:@"BlogTitle"]];
     
     [self.navigationController pushViewController:rssListViewController animated:YES];
     [rssListViewController release];

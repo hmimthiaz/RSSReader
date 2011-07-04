@@ -11,7 +11,11 @@
 
 
 @interface NewsListViewController : UITableViewController {
-    NSMutableArray * _newsSourceList;
+    NSArray * _newsSourceList;
 }
+
+@property (nonatomic, retain) NSArray * newsSourceList;
+
+- (id)initWithNewsSourceList:(NSArray * )list ;
 
 @end

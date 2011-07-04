@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Folders</key>
+	<array>
+		<dict>
+			<key>FolderName</key>
+			<string>Blogs</string>
+			<key>FolderIcon</key>
+			<string>glyphicons_024_parents.png</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Imthiaz Blog</string>
+					<key>BlogURL</key>
+					<string>http://burner.imthi.com/imthi</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Flip Media Blog</string>
+					<key>BlogURL</key>
+					<string>http://burner.imthi.com/imthi</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Imthiaz Blog</string>
+					<key>BlogURL</key>
+					<string>http://www.flipcorp.com/en/section/read/blog/feed</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

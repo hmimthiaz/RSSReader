@@ -30,6 +30,9 @@
 		083A634F13324CB90024170A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 083A634913324CB90024170A /* Icon-Small@2x.png */; };
 		083A635013324CB90024170A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 083A634A13324CB90024170A /* Icon.png */; };
 		083A635113324CB90024170A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 083A634B13324CB90024170A /* Icon@2x.png */; };
+		08AFAF3813C22CFD0096F441 /* RSS_Subscription.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08AFAF3713C22CFD0096F441 /* RSS_Subscription.plist */; };
+		08AFAF3C13C2329D0096F441 /* glyphicons_readme_free.txt in Resources */ = {isa = PBXBuildFile; fileRef = 08AFAF3B13C2329D0096F441 /* glyphicons_readme_free.txt */; };
+		08AFAF3E13C232A50096F441 /* glyphicons_024_parents.png in Resources */ = {isa = PBXBuildFile; fileRef = 08AFAF3D13C232A50096F441 /* glyphicons_024_parents.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		083A634913324CB90024170A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		083A634A13324CB90024170A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		083A634B13324CB90024170A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		08AFAF3713C22CFD0096F441 /* RSS_Subscription.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RSS_Subscription.plist; sourceTree = "<group>"; };
+		08AFAF3B13C2329D0096F441 /* glyphicons_readme_free.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glyphicons_readme_free.txt; sourceTree = "<group>"; };
+		08AFAF3D13C232A50096F441 /* glyphicons_024_parents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_024_parents.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 				081FA08A1331D82500C0F736 /* RSSReaderAppDelegate.h */,
 				081FA08B1331D82500C0F736 /* RSSReaderAppDelegate.m */,
 				081FA08D1331D82500C0F736 /* MainWindow.xib */,
+				08AFAF3713C22CFD0096F441 /* RSS_Subscription.plist */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 		081FA0821331D82500C0F736 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				08AFAF3A13C232870096F441 /* Icons */,
 				083A634613324CB90024170A /* Icon-72.png */,
 				083A634713324CB90024170A /* Icon-Small-50.png */,
 				083A634813324CB90024170A /* Icon-Small.png */,
@@ -168,6 +176,15 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		08AFAF3A13C232870096F441 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				08AFAF3D13C232A50096F441 /* glyphicons_024_parents.png */,
+				08AFAF3B13C2329D0096F441 /* glyphicons_readme_free.txt */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,7 +211,7 @@
 		081FA06E1331D82400C0F736 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = "imthi.com";
+				ORGANIZATIONNAME = imthi.com;
 			};
 			buildConfigurationList = 081FA0711331D82400C0F736 /* Build configuration list for PBXProject "RSSReader" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -231,6 +248,9 @@
 				083A634F13324CB90024170A /* Icon-Small@2x.png in Resources */,
 				083A635013324CB90024170A /* Icon.png in Resources */,
 				083A635113324CB90024170A /* Icon@2x.png in Resources */,
+				08AFAF3813C22CFD0096F441 /* RSS_Subscription.plist in Resources */,
+				08AFAF3C13C2329D0096F441 /* glyphicons_readme_free.txt in Resources */,
+				08AFAF3E13C232A50096F441 /* glyphicons_024_parents.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,18 +22,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
-    
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    NSMutableArray * viewControllers = [[NSMutableArray alloc] init];
     
+    //plist file full path
+    NSString * subscriptionListFile = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"RSS_Subscription.plist"];
+    //Load plist file as dictionary
+    NSDictionary * subscriptionList = [[NSDictionary alloc] initWithContentsOfFile:subscriptionListFile];
+    //Get the folder array
+    NSArray * subscriptionFolders = [subscriptionList objectForKey:@"Folders"];
     
-    NewsListViewController * newsController = [[NewsListViewController alloc] initWithNibName:@"NewsListViewController" bundle:nil];
-    
-    UINavigationController * newsNavigationController = [[UINavigationController alloc] initWithRootViewController:newsController];
-    [self.tabBarController setViewControllers:[NSArray arrayWithObject:newsNavigationController]];
-
-    [newsNavigationController release];
-    [newsController release];
-     
+    NewsListViewController * newsController = nil;
+    UINavigationController * newsNavigationController = nil;
+    for (NSDictionary * folderDetails in subscriptionFolders) {
+        
+        newsController = [[NewsListViewController alloc] initWithNibName:@"NewsListViewController" bundle:nil];
+        newsNavigationController = [[UINavigationController alloc] initWithRootViewController:newsController];
+        
+        NSString * folderTitle = [folderDetails objectForKey:@"FolderName"];
+        NSString * folderIcon = [folderDetails objectForKey:@"FolderIcon"];
+        UIImage * folderIconImage = [UIImage imageNamed:folderIcon];
+        
+        [newsNavigationController setTitle:folderTitle];
+        [newsNavigationController.tabBarItem setImage:folderIconImage];
+        
+        [viewControllers addObject:newsNavigationController];
+        
+        [newsNavigationController release];
+        [newsController release];
+    }
+    [self.tabBarController setViewControllers:viewControllers];
     [self.window addSubview:self.tabBarController.view];
     
     [self.window makeKeyAndVisible];

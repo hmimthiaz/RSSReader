@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0809704F13C238CE00011037 /* glyphicons_252_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 0809704E13C238CE00011037 /* glyphicons_252_twitter.png */; };
 		0809705213C23A7600011037 /* glyphicons_149_folder_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 0809705113C23A7600011037 /* glyphicons_149_folder_new.png */; };
+		0809705413C23DB400011037 /* glyphicons_205_electricity.png in Resources */ = {isa = PBXBuildFile; fileRef = 0809705313C23DB400011037 /* glyphicons_205_electricity.png */; };
+		0809705613C23F8C00011037 /* glyphicons_291_snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = 0809705513C23F8C00011037 /* glyphicons_291_snowman.png */; };
+		0809705813C244BF00011037 /* glyphicons_153_more_windows.png in Resources */ = {isa = PBXBuildFile; fileRef = 0809705713C244BF00011037 /* glyphicons_153_more_windows.png */; };
 		081FA07C1331D82500C0F736 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081FA07B1331D82500C0F736 /* UIKit.framework */; };
 		081FA07E1331D82500C0F736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081FA07D1331D82500C0F736 /* Foundation.framework */; };
 		081FA0801331D82500C0F736 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081FA07F1331D82500C0F736 /* CoreGraphics.framework */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		0809704E13C238CE00011037 /* glyphicons_252_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_252_twitter.png; sourceTree = "<group>"; };
 		0809705113C23A7600011037 /* glyphicons_149_folder_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_149_folder_new.png; sourceTree = "<group>"; };
+		0809705313C23DB400011037 /* glyphicons_205_electricity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_205_electricity.png; sourceTree = "<group>"; };
+		0809705513C23F8C00011037 /* glyphicons_291_snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_291_snowman.png; sourceTree = "<group>"; };
+		0809705713C244BF00011037 /* glyphicons_153_more_windows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glyphicons_153_more_windows.png; sourceTree = "<group>"; };
 		081FA0771331D82500C0F736 /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		081FA07B1331D82500C0F736 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		081FA07D1331D82500C0F736 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -183,6 +189,9 @@
 		08AFAF3A13C232870096F441 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				0809705713C244BF00011037 /* glyphicons_153_more_windows.png */,
+				0809705313C23DB400011037 /* glyphicons_205_electricity.png */,
+				0809705513C23F8C00011037 /* glyphicons_291_snowman.png */,
 				0809705113C23A7600011037 /* glyphicons_149_folder_new.png */,
 				0809704E13C238CE00011037 /* glyphicons_252_twitter.png */,
 				08AFAF3D13C232A50096F441 /* glyphicons_024_parents.png */,
@@ -259,6 +268,9 @@
 				08AFAF3E13C232A50096F441 /* glyphicons_024_parents.png in Resources */,
 				0809704F13C238CE00011037 /* glyphicons_252_twitter.png in Resources */,
 				0809705213C23A7600011037 /* glyphicons_149_folder_new.png in Resources */,
+				0809705413C23DB400011037 /* glyphicons_205_electricity.png in Resources */,
+				0809705613C23F8C00011037 /* glyphicons_291_snowman.png in Resources */,
+				0809705813C244BF00011037 /* glyphicons_153_more_windows.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

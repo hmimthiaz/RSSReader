@@ -103,6 +103,93 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>FolderIcon</key>
+			<string>glyphicons_205_electricity.png</string>
+			<key>FolderName</key>
+			<string>Tech</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>BlogTitle</key>
+					<string>TUAW</string>
+					<key>BlogURL</key>
+					<string>http://www.tuaw.com/rss.xml</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>MacRumors</string>
+					<key>BlogURL</key>
+					<string>http://feeds.macrumors.com/MacRumors-All</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Engadget</string>
+					<key>BlogURL</key>
+					<string>http://www.engadget.com/rss.xml</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Gizmodo</string>
+					<key>BlogURL</key>
+					<string>http://gizmodo.com/index.xml</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>FolderIcon</key>
+			<string>glyphicons_291_snowman.png</string>
+			<key>FolderName</key>
+			<string>Fun</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Dilbert Daily Strip </string>
+					<key>BlogURL</key>
+					<string>http://feeds.feedburner.com/DilbertDailyStrip</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Geek And Poke</string>
+					<key>BlogURL</key>
+					<string>http://feeds.feedburner.com/GeekAndPoke</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>Lolcats &apos;n&apos; Funny Pictures </string>
+					<key>BlogURL</key>
+					<string>http://feeds.feedburner.com/ICanHasCheezburger</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>FolderIcon</key>
+			<string>glyphicons_153_more_windows.png</string>
+			<key>FolderName</key>
+			<string>Misc</string>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>BlogTitle</key>
+					<string>MacOSXHints.com</string>
+					<key>BlogURL</key>
+					<string>http://www.macosxhints.com/backend/geeklog.rdf</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>iPhone Hacks</string>
+					<key>BlogURL</key>
+					<string>http://feeds.iphonehacks.com/iphonehacks</string>
+				</dict>
+				<dict>
+					<key>BlogTitle</key>
+					<string>[iPhone developer:tips];</string>
+					<key>BlogURL</key>
+					<string>http://feeds.feedburner.com/IphoneDeveloperTips</string>
+				</dict>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>

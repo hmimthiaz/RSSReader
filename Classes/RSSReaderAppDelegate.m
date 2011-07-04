@@ -17,17 +17,24 @@
 
 @synthesize window=_window;
 
-@synthesize navigationController = _navigationController;
-@synthesize newsViewController = _newsViewController;
+@synthesize tabBarController = _tabBarController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    
+    
+    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    
+    
+    NewsListViewController * newsController = [[NewsListViewController alloc] initWithNibName:@"NewsListViewController" bundle:nil];
+    
+    UINavigationController * newsNavigationController = [[UINavigationController alloc] initWithRootViewController:newsController];
+    [self.tabBarController setViewControllers:[NSArray arrayWithObject:newsNavigationController]];
 
-    self.newsViewController = [[[NewsListViewController alloc] initWithNibName:@"NewsListViewController"
-                                                                        bundle:nil] autorelease]; 
-    
-    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.newsViewController] autorelease];
-    
-    [self.window addSubview:self.navigationController.view];
+    [newsNavigationController release];
+    [newsController release];
+     
+    [self.window addSubview:self.tabBarController.view];
     
     [self.window makeKeyAndVisible];
     return YES;
@@ -36,9 +43,7 @@
 
 - (void)dealloc{
     
-    self.newsViewController = nil;
-
-    self.navigationController = nil;
+    self.tabBarController = nil;
     
     [_window release];
     [super dealloc];

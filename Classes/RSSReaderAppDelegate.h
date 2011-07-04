@@ -9,19 +9,12 @@
 
 
 #import <UIKit/UIKit.h>
-#import "RSSParser.h"
-
-@class NewsListViewController;
 
 @interface RSSReaderAppDelegate : NSObject <UIApplicationDelegate> {
-    UINavigationController * _navigationController;
-    NewsListViewController * _newsViewController;
+    UITabBarController * _tabBarController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow * window;
-
-@property (nonatomic, retain) UINavigationController * navigationController;
-
-@property (nonatomic, retain) NewsListViewController * newsViewController;
+@property (nonatomic, retain) UITabBarController * tabBarController;
 
 @end

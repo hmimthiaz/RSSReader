@@ -123,11 +123,10 @@
 		elementName = qName;
 	}
     NSString * parsedElementContent = nil;
-    if (_parsedElementString!=nil) {
-        parsedElementContent = [[NSString alloc] initWithString:_parsedElementString];
-    }
-    if (_parsedElementData!=nil) {
+    if (_parsedElementData != nil) {
         parsedElementContent = [[NSString alloc] initWithData:_parsedElementData encoding:NSUTF8StringEncoding];
+    } else if (_parsedElementString != nil) {
+        parsedElementContent = [[NSString alloc] initWithString:_parsedElementString];
     }
     
 	if([elementName isEqualToString:@"title"]){
